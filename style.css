@@ -1,0 +1,84 @@
+body{
+    background-image: url(body4.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.calculator {
+    position: absolute;
+    top: 11rem;
+    border-radius: 5rem;
+    width: 200px;
+    /* margin: 15rem auto; */
+    text-align: center;
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 15px 15px 5px black;
+    background-color: rgba(14, 13, 13, 0.5);
+    color: white;
+    transition: all 1s ease;
+    cursor: grabbing;
+}
+.calculator:hover{
+    transform: scale(1.2);
+}
+
+.calculator-content{
+    padding: 5rem auto;
+    
+}
+
+input[type="text"] {
+    box-shadow: 5px 15px 15px 5px black;
+    color: white;
+    border: 3px solid rgba(255, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 1rem;
+}
+
+button {
+    border-radius: 15px;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    margin: 7px;   
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+    border: 2px solid brown;
+    box-shadow: 5px 5px 7px 5px black;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+.keypad {
+    margin: 2rem;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: auto;
+    grid-gap: 2px;
+    position: relative;
+}
+#box{
+    position: absolute;
+    top: 16rem;
+    left: 6rem;
+}
